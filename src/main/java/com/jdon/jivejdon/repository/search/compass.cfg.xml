@@ -1,0 +1,30 @@
+<compass-core-config xmlns="http://www.opensymphony.com/compass/schema/core-config"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.opensymphony.com/compass/schema/core-config
+           http://www.opensymphony.com/compass/schema/compass-core-config.xsd">
+
+   <compass name="default">
+     <!-- 
+      <connection>
+      <jdbc dialect="org.apache.lucene.store.jdbc.dialect.MySQLDialect">
+         <dataSourceProvider >
+           <jndi lookup="java:/JiveJdonDS"/>
+         </dataSourceProvider>
+      </jdbc>
+      </connection> 
+       -->
+   <connection>
+          <file path="target/test-index"/>
+      </connection>      
+     
+      <mappings>
+          <!--  this is for test, normal is configured in MessageSearchProxy.init() reInit -->
+          <class name="com.jdon.jivejdon.model.ForumMessage" />
+          <class name="com.jdon.jivejdon.model.Forum" />       
+          <class name="com.jdon.jivejdon.model.message.MessageVO" />   
+      </mappings>
+   
+   </compass>
+</compass-core-config>         
+
+

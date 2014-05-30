@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE struts-config PUBLIC
+          "-//Apache Software Foundation//DTD Struts Configuration 1.2//EN"
+          "struts-config_1_2.dtd">
+
+<struts-config>
+ 
+  <action-mappings>
+   <!-- first:  get the account from parameter "userId" in fact it is "username" --> 
+    <action name="accountProfileForm" path="/account/cp/index" type="com.jdon.strutsutil.ModelDispAction" scope="request"
+		validate="false">
+       <forward name="success" path="/account/cp/default.jsp" />
+      <forward name="failure" path="/common/permError.jsp" />
+    </action>
+    
+    <action path="/query/blog/userMessageReplyBlog" type="com.jdon.jivejdon.presentation.action.query.MessageReplyQueryUserAction" 
+      name="messageListForm" scope="request" 
+      validate="false">
+		<forward name="success" path="/query/blog/userMessageBlogView.jsp"/>
+		<forward name="failure" path="/common/permError.jsp" />
+	</action>
+	
+	<action path="/query/blog/userThreadBlog" type="com.jdon.jivejdon.presentation.action.query.ThreadQueryUserAction" 
+      name="threadListForm" scope="request" 
+      validate="false">
+		<forward name="success" path="/query/blog/userThreadBlogView.jsp"/>
+		<forward name="failure" path="/common/permError.jsp" />
+	</action>
+    
+  </action-mappings>
+  
+</struts-config>
