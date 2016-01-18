@@ -1,3 +1,3 @@
-»ùÓÚjivejdon4.6µÄÂÛÌ³Ó¦ÓÃ
+åŸºäºjivejdon4.6çš„è®ºå›åº”ç”¨
 
 http://nk3310.github.com/jivejdon/
