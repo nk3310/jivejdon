@@ -15,6 +15,9 @@
  */
 package com.github.nk3310.jivejdon.application;
 
+import  com.github.nk3310.jivejdon.domain.model.ForumMessage;
+
+
 
 
 
@@ -26,9 +29,9 @@ public interface ForumMessageService {
 	/**
 	 * create a topic message, it is a root message
 	 * 
-	 * @param em
+	 *    
 	 */
-	void createTopicMessage() throws Exception;
+	void createTopicMessage(ForumMessage forumMessage ) throws Exception;
 
 	
 	
